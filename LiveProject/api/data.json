@@ -1,0 +1,18 @@
+{
+    "account":[
+        {
+            "id":"1",
+            "fullname":"Admin 1",
+            "email":"admin1@gmail.com",
+            "password":"123",
+            "token":"123ABC456DEF789GHI"
+        },
+        {
+            "id":"2",
+            "fullname":"Admin 2",
+            "email":"admin2@gmail.com",
+            "password":"123",
+            "token":"123JKL456MNO789PQR"
+        }
+    ]
+}
