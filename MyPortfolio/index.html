@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <title>Document</title>
-    </head>
-    <body>
-        
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--================= RemixIcons ==================-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--================= CSS ==================-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <!--================= Header ==================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link active-link">Hello</a>
+                    </li>
+                    <li>
+                        <a href="#resume" class="nav__link">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                  <i class="ri-close-fill"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-fill"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--================= Main ==================-->
+    <main class="main">
+      <!--================= Home ==================-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <img src="img/profile.jpg" alt="" class="home__img" />
+
+          <div class="home__data">
+            <h1 class="home__name">Mohit Tayal</h1>
+            <p class="home__work">Frontend Developer</p>
+            <dl class="home__list">
+              <dt>AGE:</dt>
+              <dd>24</dd>
+              <dt>PHONE:</dt>
+              <dd>+91 86996-86065</dd>
+              <dt>EMAIL:</dt>
+              <dd>mohittayal0103@gmail.com</dd>
+              <dt>ADDRESS:</dt>
+              <dd>Bangalore, India</dd>
+            </dl>
+            <div class="home__socials">
+                <a href="https://github.com/mohittayal0103" target="_blank" class="home__social-link">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mohit-tayal-58bb7a2b6/" target="_blank" class="home__social-link">
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!--================= Hello ==================-->
+    <section class="hello section container">
+      <h2 class="section__title"> Hi_</h2>
+      <p class="hello_details text-lg"> 
+        Dedicated Computer Science engineer with 2 years of experience as a Senior
+        Analyst specializing in data analysis tools tailored for pharmaceutical clients.
+        Demonstrated expertise in optimizing data analysis workflows, resulting in a notable
+        20% efficiency enhancement through the implementation of automation scripts
+        within Informatica Power Centre. Acknowledged twice as a Rising Star for
+        consistently surpassing performance expectations and showcasing outstanding
+        problem-solving capabilities.
+        </p>
+        <a href="img/MohitTayalResume.pdf" target="_blank" class="button button-flex">
+          <i class="ri-download-line"></i> DOWNLOAD CV
+        </a>
+    </section>
+    </main>
+
+    <!--==================== JS =====================-->
+    <script src="js/main.js"></script>
+  </body>
 </html>
