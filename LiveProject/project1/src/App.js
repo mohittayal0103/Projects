@@ -1,9 +1,10 @@
 import Mylogin from './user/login';
+import AdminApp from './admin/adminapp';
 
 function App() {
   return (
     <>
-    <Mylogin/>
+    <AdminApp/>
     </>
   );
 }
