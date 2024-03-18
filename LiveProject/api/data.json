@@ -1,18 +1,64 @@
 {
-    "account":[
-        {
-            "id":"1",
-            "fullname":"Admin 1",
-            "email":"admin1@gmail.com",
-            "password":"123",
-            "token":"123ABC456DEF789GHI"
-        },
-        {
-            "id":"2",
-            "fullname":"Admin 2",
-            "email":"admin2@gmail.com",
-            "password":"123",
-            "token":"123JKL456MNO789PQR"
-        }
-    ]
+  "account": [
+    {
+      "id": "1",
+      "fullname": "Admin 1",
+      "email": "admin1@gmail.com",
+      "password": "123",
+      "token": "123ABC456DEF789GHI"
+    }
+  ],
+  "product": [
+    {
+      "id": "681e",
+      "pname": "Dell Mouse",
+      "price": "800",
+      "photo": "printer.jpg",
+      "details": "This is very good printer."
+    },
+    {
+      "id": "8e33",
+      "pname": "Dell Mouse",
+      "price": "800",
+      "photo": "printer.jpg",
+      "details": "This is very good printer."
+    },
+    {
+      "id": "a408",
+      "pname": "Dell Mouse",
+      "price": "800",
+      "photo": "printer.jpg",
+      "details": "This is very good printer."
+    },
+    {
+      "id": "ff01",
+      "pname": "Dell Mouse",
+      "price": "800",
+      "photo": "printer.jpg",
+      "details": "This is very good printer."
+    },
+    {
+      "id": "476e",
+      "pname": "Mohit",
+      "price": "",
+      "photo": "",
+      "details": ""
+    },
+    {
+      "id": "2701",
+      "pname": "Mahima",
+      "price": "",
+      "photo": "",
+      "details": ""
+    },
+    {
+      "id": "fe2a",
+      "pname": "Mahima",
+      "price": "",
+      "photo": "",
+      "details": ""
+    }
+  ],
+  "cart": [],
+  "order": []
 }
