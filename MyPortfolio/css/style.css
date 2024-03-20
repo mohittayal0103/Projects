@@ -39,7 +39,6 @@
 }
 
 /*=================== Base ====================*/
-
 * {
   margin: 0;
   padding: 0;
@@ -127,13 +126,17 @@ input {
   line-height: 1.67em;
 }
 
+.text-md {
+  font-size: var(--fs-base);
+  line-height: 1.52em;
+}
+
 .text-sm {
   font-size: var(--fs-sm);
   line-height: 1.43em;
 }
 
 /*=================== Header ====================*/
-
 .header {
   position: absolute;
   top: 0;
@@ -370,12 +373,16 @@ animation-play-state: running;
     left: 0.9rem;
 }
 
-services__title {
+.services__title {
     margin-bottom: 0.8rem;
 }
 
-/*=================== Resume ====================*/
+.services__detail{
+    margin-bottom: 0.8rem;
+    text-align: justify;
+}
 
+/*=================== Resume ====================*/
 .resume__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3.75rem;
@@ -420,3 +427,5 @@ services__title {
 .resume__description {
     text-align: justify;
 }
+
+/*=================== Skills ====================*/
