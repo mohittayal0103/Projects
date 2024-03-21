@@ -65,7 +65,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--mono-font);
   font-weight: var(--bold);
 }
@@ -136,6 +137,17 @@ input {
   line-height: 1.43em;
 }
 
+.text-xs {
+  font-size: var(--fs-xs);
+  line-height: 1.5em;
+}
+
+.skills__title,
+.resume__title {
+  color: var(--text-color-alt);
+  letter-spacing: 0.4em;
+  margin-bottom: 2.8em;
+}
 /*=================== Header ====================*/
 .header {
   position: absolute;
@@ -388,12 +400,6 @@ animation-play-state: running;
     column-gap: 3.75rem;
 }
 
-.resume__title {
-    color: var(--text-color-alt);
-    letter-spacing: 0.4em;
-    margin-bottom: 2.8em;
-}
-
 .resume__item {
     border-left: 2px solid var(--primary-color);
     padding-left: 1.6rem;position: relative;
@@ -429,3 +435,83 @@ animation-play-state: running;
 }
 
 /*=================== Skills ====================*/
+.skills__container { 
+  grid-template-columns: repeat(2, 445px);
+  column-gap: 7rem;
+}
+
+.skills__list {
+  row-gap: 1.8rem;
+}
+
+.skills__titles { 
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.625rem;
+}
+
+.skills__bar,
+.skills__percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills__bar {
+  background-color: var(--bg-color-alt);
+}
+
+.skills__percentage {
+  display: block;
+  background-color: var(--primary-color);
+}
+
+/*=================== Projects ====================*/
+.project__item {
+  grid-template-columns: 5fr 7fr;
+}
+
+.projects__container {
+  row-gap: 2.5rem;
+}
+
+.project__img {
+  width: 500px;
+  height: 400px;
+  /* object-fit: cover; */
+  border: 2px solid var(--border-color) ;
+  border-radius: 4px;
+}
+
+.project__data {
+  padding: 3rem 3rem 2.5rem 1.875rem;
+  border: 1px solid var(--border-color);
+}
+
+.project__title {
+  margin-bottom: 0.8em;
+  text-align: justify;
+}
+
+.project__description {
+  margin-bottom: 2.5em;
+  text-align: justify;
+}
+
+.project__stack {
+  margin-bottom: 1.25em;
+}
+
+.tags li {
+  display: inline-block;
+  margin-right: 0.6rem;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 14%);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.2rem;
+}
+
+.project__link {
+  float: right;
+  margin-top: 3.9rem;
+  color: var(--primary-color);
+  font-family: var(--mono-font);
+}
