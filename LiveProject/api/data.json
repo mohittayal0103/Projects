@@ -10,53 +10,39 @@
   ],
   "product": [
     {
-      "id": "681e",
-      "pname": "Dell Mouse",
-      "price": "800",
-      "photo": "printer.jpg",
-      "details": "This is very good printer."
-    },
-    {
       "id": "8e33",
-      "pname": "Dell Mouse",
+      "pname": "iBall Speaker",
       "price": "800",
-      "photo": "printer.jpg",
-      "details": "This is very good printer."
-    },
-    {
-      "id": "a408",
-      "pname": "Dell Mouse",
-      "price": "800",
-      "photo": "printer.jpg",
-      "details": "This is very good printer."
+      "photo": "speaker.jpg",
+      "details": "This is very good speaker."
     },
     {
       "id": "ff01",
       "pname": "Dell Mouse",
       "price": "800",
+      "photo": "mouse.jpg",
+      "details": "This is very good mouse."
+    },
+    {
+      "id": "b12d",
+      "pname": "HP Printer",
+      "price": "12000",
       "photo": "printer.jpg",
-      "details": "This is very good printer."
+      "details": "This is a good printer."
     },
     {
-      "id": "476e",
-      "pname": "Mohit",
-      "price": "",
-      "photo": "",
-      "details": ""
+      "id": "aa30",
+      "pname": "Monitor",
+      "price": "25000",
+      "photo": "monitor.jpg",
+      "details": "This is very good monitor"
     },
     {
-      "id": "2701",
-      "pname": "Mahima",
-      "price": "",
-      "photo": "",
-      "details": ""
-    },
-    {
-      "id": "fe2a",
-      "pname": "Mahima",
-      "price": "",
-      "photo": "",
-      "details": ""
+      "id": "c020",
+      "pname": "Laptop",
+      "price": "80000",
+      "photo": "laptop.jpg",
+      "details": "This is very good laptop."
     }
   ],
   "cart": [],

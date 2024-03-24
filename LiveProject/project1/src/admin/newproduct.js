@@ -1,21 +1,11 @@
 import { useState, useEffect } from "react";
+import swal from "sweetalert";
 
 const NewProduct = () => {
-  let [allproduct, updateProduct] = useState("");
   let [productname, pickName] = useState("");
   let [productprice, pickPrice] = useState("");
   let [productphoto, pickPhoto] = useState("");
-  let [productdetails, pickDetails] = useState("");
-
-
-  //Get Product in Table Function
-  const getProduct = () => {
-    fetch("http://localhost:1234/product")
-    .then(response=>response.json())
-    .then(pArray=>{
-        updateProduct(pArray);
-    });
-  };
+  let [productdetails, pickDetails] = useState("");  
 
   //Save Function
 
@@ -35,8 +25,11 @@ const NewProduct = () => {
     fetch(url, postdata)
       .then((response) => response.json())
       .then((pinfo) => {
-        alert(newproduct.pname + " - Uploaded Successfully !");
+        swal(newproduct.pname + " - Uploaded Successfully !", "Success");
         pickName("");
+        pickPrice("");
+        pickPhoto("");
+        pickDetails("");
       });
   };
 
@@ -52,6 +45,7 @@ const NewProduct = () => {
             type="text"
             className="form-control"
             onChange={(obj) => pickName(obj.target.value)}
+            value={productname}
           />
         </div>
         <div className="col-lg-4">
@@ -60,6 +54,7 @@ const NewProduct = () => {
             type="text"
             className="form-control"
             onChange={(obj) => pickPrice(obj.target.value)}
+            value={productprice}
           />
         </div>
         <div className="col-lg-4">
@@ -68,6 +63,7 @@ const NewProduct = () => {
             type="text"
             className="form-control"
             onChange={(obj) => pickPhoto(obj.target.value)}
+            value={productphoto}
           />
         </div>
         <div className="col-lg-8">
@@ -75,12 +71,12 @@ const NewProduct = () => {
           <textarea
             className="form-control"
             onChange={(obj) => pickDetails(obj.target.value)}
+            value={productdetails}
           ></textarea>
         </div>
         <div className="col-lg-4 pt-5 text-center">
           <button className="btn btn-primary" onClick={save}>
-            {" "}
-            Save Product{" "}
+            Save Product
           </button>
         </div>
       </div>

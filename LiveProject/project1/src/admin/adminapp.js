@@ -1,6 +1,7 @@
 import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import MyDashboard from "./dashboard";
 import NewProduct from "./newproduct";
+import ProductList from "./productlist";
 
 const AdminApp = () => {
   return (
@@ -52,6 +53,7 @@ const AdminApp = () => {
       <Routes>
         <Route exact path="/" element={<MyDashboard/>}  />
         <Route exact path="/newproduct" element={<NewProduct/>}  />
+        <Route exact path="/productlist" element={<ProductList/>}  />
       </Routes>
     </HashRouter>
   );
