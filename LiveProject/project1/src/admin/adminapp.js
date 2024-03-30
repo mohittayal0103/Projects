@@ -42,8 +42,8 @@ const AdminApp = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-warning">
-                  Welcome Seller 1 <i className="fa fa-power-off"></i> Logout
+                <Link className="nav-link text-warning" onClick={logout}>
+                  Welcome {localStorage.getItem("sellername")} <i className="fa fa-power-off"></i> Logout
                 </Link>
               </li>
             </ul>
@@ -60,3 +60,9 @@ const AdminApp = () => {
 };
 
 export default AdminApp;
+
+
+const logout = () => {
+  localStorage.clear();
+  window.location.reload();
+}
