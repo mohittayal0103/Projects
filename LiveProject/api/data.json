@@ -45,6 +45,15 @@
       "details": "This is very good laptop."
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": "c020",
+      "pname": "Laptop",
+      "price": "80000",
+      "photo": "laptop.jpg",
+      "details": "This is very good laptop.",
+      "qty": 1
+    }
+  ],
   "order": []
 }
