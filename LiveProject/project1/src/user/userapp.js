@@ -1,10 +1,11 @@
 import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import Mylogin from "./login";
+import MyHome from "./home";
 
 const UserApp = () => {
   return (
     <HashRouter>
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-3">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-mycolor p-2 sticky-top">
         <div className="container">
           <a className="navbar-brand">
             <i className="fa fa-shopping-bag fa-lg"></i> ShopNow
@@ -40,7 +41,37 @@ const UserApp = () => {
       </nav>
       <Routes>
         <Route exact path="/login" element={<Mylogin/>}  />
+        <Route exact path="/" element={<MyHome/>}  />
       </Routes>
+
+      <footer className="bg-secondary text-white p-3 mt-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <h4 className="mb-4"> About Us </h4>
+              <p>
+                dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+                dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+                dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+                dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+                dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+              </p>
+            </div>
+            <div className="col-lg-4">
+              <h4 className="mb-4"> Contact to Support </h4>
+              <p> Mobile No: +91-8699686065 </p>
+              <p> Email Id: contact@yourwebsite.com </p>
+              <p> Email Id: contact@yourwebsite.com </p>
+            </div>
+            <div className="col-lg-4">
+              <h4 className="mb-4"> Follow Us on Social Media </h4>
+              <p> <i className="fab fa-facebook fa-lg"></i>  www.facebook.com </p>
+              <p> <i className="fab fa-linkedin fa-lg"></i>  www.linkedin.com </p>
+              <p> <i className="fab fa-twitter fa-lg"></i>  www.twitter.com </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </HashRouter>
   );
 };
