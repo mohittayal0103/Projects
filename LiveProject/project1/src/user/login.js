@@ -15,8 +15,8 @@ const Mylogin = () => {
         .then((response) => response.json())
         .then((userinfo) => {
           if (userinfo.length > 0) {
-            localStorage.setitem("sellerid", userinfo[0].id);
-            localStorage.setitem("sellername", userinfo[0].fullname);
+            localStorage.setItem("sellerid", userinfo[0].id);
+            localStorage.setItem("sellername", userinfo[0].fullname);
             window.location.reload();
           } else {
             swal("Invalid Input", "Invalid or Not Exists", "warning");
@@ -26,7 +26,7 @@ const Mylogin = () => {
   };
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-5">
       <div className="row">
         <div className="col-lg-4"></div>
         <div className="col-lg-4">
