@@ -3,7 +3,7 @@ import UserApp from './user/userapp';
 
 function App() {
 
-  if( localStorage.getItem("sellerid" == null))
+  if( localStorage.getItem("sellerid") == null)
   return (<UserApp/>);
   else
   return (<AdminApp/>);
