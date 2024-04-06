@@ -1,6 +1,7 @@
 import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import Mylogin from "./login";
 import MyHome from "./home";
+import Mycart from "./cart";
 
 const UserApp = () => {
   return (
@@ -40,6 +41,7 @@ const UserApp = () => {
         </div>
       </nav>
       <Routes>
+      <Route exact path="/cart" element={<Mycart/>}  />
         <Route exact path="/login" element={<Mylogin/>}  />
         <Route exact path="/" element={<MyHome/>}  />
       </Routes>
