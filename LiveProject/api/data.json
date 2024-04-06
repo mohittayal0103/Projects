@@ -52,7 +52,23 @@
       "price": "80000",
       "photo": "laptop.jpg",
       "details": "This is very good laptop.",
-      "qty": 1
+      "qty": 2
+    },
+    {
+      "id": "aa30",
+      "pname": "Monitor",
+      "price": "25000",
+      "photo": "monitor.jpg",
+      "details": "This is very good monitor",
+      "qty": 3
+    },
+    {
+      "id": "b12d",
+      "pname": "HP Printer",
+      "price": "12000",
+      "photo": "printer.jpg",
+      "details": "This is a good printer.",
+      "qty": 2
     }
   ],
   "order": []
