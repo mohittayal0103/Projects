@@ -43,7 +43,7 @@ const MyHome = () => {
     fetch(url, postdata)
       .then((response) => response.json())
       .then((pinfo) => {
-        swal(product.pname + " - Added to Your Cart !", "Success");
+        swal("", product.pname + " - Added to Your Cart !", "success");
       });
   };
 
