@@ -3,208 +3,178 @@
     {
       "id": "1",
       "fullname": "Admin 1",
-      "email": "admin1@gmail.com",
+      "email": "admin@gmail.com",
       "password": "123",
-      "token": "123ABC456DEF789GHI"
+      "token": "123ABC4564FHFGHF789789"
     }
   ],
   "product": [
     {
-      "id": "8e33",
-      "pname": "iBall Speaker",
-      "price": "800",
-      "photo": "speaker.jpg",
-      "details": "This is very good speaker."
-    },
-    {
-      "id": "ff01",
-      "pname": "Dell Mouse",
-      "price": "800",
+      "id": "07b2",
+      "pname": "Mouse Dell",
+      "price": 800,
       "photo": "mouse.jpg",
-      "details": "This is very good mouse."
+      "details": "This very strong mouse"
     },
     {
-      "id": "b12d",
-      "pname": "HP Printer",
+      "id": "92de",
+      "pname": "Printer",
       "price": "12000",
       "photo": "printer.jpg",
-      "details": "This is a good printer."
+      "details": "This is good printer"
     },
     {
-      "id": "aa30",
-      "pname": "Monitor",
-      "price": "25000",
-      "photo": "monitor.jpg",
-      "details": "This is very good monitor"
+      "id": "9060",
+      "pname": "Zeep",
+      "price": "400000",
+      "photo": "zeep.jpg",
+      "details": "Strong thar Zeep"
     },
     {
-      "id": "c020",
-      "pname": "Laptop",
-      "price": "80000",
+      "id": "f128",
+      "pname": "MultiXL Bus",
+      "price": "12000000",
+      "photo": "bus.jpg",
+      "details": "This is very best bus"
+    },
+    {
+      "id": "a163",
+      "pname": "Desktop For Office",
+      "price": "450000",
+      "photo": "desktop.jpg",
+      "details": "Multi Purpose Bus"
+    },
+    {
+      "id": "243f",
+      "pname": "Cargo Truck",
+      "price": "12000000",
+      "photo": "truck.jpg",
+      "details": "Multi purpose truck"
+    },
+    {
+      "id": "ef8a",
+      "pname": "Dell Laptop",
+      "price": "45000",
       "photo": "laptop.jpg",
-      "details": "This is very good laptop."
+      "details": "Laptop for office"
     }
   ],
   "cart": [
     {
-      "id": "c020",
-      "pname": "Laptop",
-      "price": "80000",
-      "photo": "laptop.jpg",
-      "details": "This is very good laptop.",
+      "id": "a163",
+      "pname": "Desktop For Office",
+      "price": "450000",
+      "photo": "desktop.jpg",
+      "details": "Multi Purpose Bus",
       "qty": 2
-    },
-    {
-      "id": "aa30",
-      "pname": "Monitor",
-      "price": "25000",
-      "photo": "monitor.jpg",
-      "details": "This is very good monitor",
-      "qty": 3
-    },
-    {
-      "id": "b12d",
-      "pname": "HP Printer",
-      "price": "12000",
-      "photo": "printer.jpg",
-      "details": "This is a good printer.",
-      "qty": 2
-    },
-    {
-      "id": "c020",
-      "pname": "Laptop",
-      "price": "80000",
-      "photo": "laptop.jpg",
-      "details": "This is very good laptop.",
-      "qty": 1
-    },
-    {
-      "id": "c020",
-      "pname": "Laptop",
-      "price": "80000",
-      "photo": "laptop.jpg",
-      "details": "This is very good laptop.",
-      "qty": 1
-    },
-    {
-      "id": "c020",
-      "pname": "Laptop",
-      "price": "80000",
-      "photo": "laptop.jpg",
-      "details": "This is very good laptop.",
-      "qty": 1
     }
   ],
   "order": [
     {
-      "id": "8493",
-      "fullname": "",
-      "email": "",
-      "mobile": "",
+      "id": "8676",
+      "fullname": "Siyaram",
+      "email": "sss@gmail.com",
+      "mobile": "8754569875",
+      "address": "Marathahalli bangalore",
       "itemlist": [
         {
-          "id": "b12d",
-          "pname": "HP Printer",
+          "id": "92de",
+          "pname": "Printer",
           "price": "12000",
           "photo": "printer.jpg",
-          "details": "This is a good printer.",
-          "qty": 2
+          "details": "This is good printer",
+          "qty": 1
         },
         {
-          "id": "aa30",
-          "pname": "Monitor",
-          "price": "25000",
-          "photo": "monitor.jpg",
-          "details": "This is very good monitor",
+          "id": "92de",
+          "pname": "Printer",
+          "price": "12000",
+          "photo": "printer.jpg",
+          "details": "This is good printer",
+          "qty": 1
+        },
+        {
+          "id": "92de",
+          "pname": "Printer",
+          "price": "12000",
+          "photo": "printer.jpg",
+          "details": "This is good printer",
+          "qty": 5
+        },
+        {
+          "id": "ef8a",
+          "pname": "Dell Laptop",
+          "price": "45000",
+          "photo": "laptop.jpg",
+          "details": "Laptop for office",
           "qty": 3
         },
         {
-          "id": "c020",
-          "pname": "Laptop",
-          "price": "80000",
-          "photo": "laptop.jpg",
-          "details": "This is very good laptop.",
-          "qty": 2
+          "id": "243f",
+          "pname": "Cargo Truck",
+          "price": "12000000",
+          "photo": "truck.jpg",
+          "details": "Multi purpose truck",
+          "qty": 5
         }
       ]
     },
     {
-      "id": "2535",
-      "fullname": "",
-      "email": "",
-      "mobile": "",
+      "id": "5410",
+      "fullname": "Alex",
+      "email": "alex@gmail.com",
+      "mobile": "9098787678",
+      "address": "Marathahalli bangalore",
       "itemlist": [
         {
-          "id": "c020",
-          "pname": "Laptop",
-          "price": "80000",
-          "photo": "laptop.jpg",
-          "details": "This is very good laptop.",
+          "id": "a163",
+          "pname": "Desktop For Office",
+          "price": "450000",
+          "photo": "desktop.jpg",
+          "details": "Multi Purpose Bus",
           "qty": 1
         },
         {
-          "id": "b12d",
-          "pname": "HP Printer",
-          "price": "12000",
-          "photo": "printer.jpg",
-          "details": "This is a good printer.",
-          "qty": 2
-        },
-        {
-          "id": "aa30",
-          "pname": "Monitor",
-          "price": "25000",
-          "photo": "monitor.jpg",
-          "details": "This is very good monitor",
-          "qty": 3
-        },
-        {
-          "id": "c020",
-          "pname": "Laptop",
-          "price": "80000",
-          "photo": "laptop.jpg",
-          "details": "This is very good laptop.",
-          "qty": 2
+          "id": "9060",
+          "pname": "Zeep",
+          "price": "400000",
+          "photo": "zeep.jpg",
+          "details": "Strong thar Zeep",
+          "qty": 1
         }
       ]
     },
     {
-      "id": "0b85",
-      "fullname": "",
-      "email": "",
-      "mobile": "",
+      "id": "42b1",
+      "fullname": "Sumit",
+      "email": "sumit@gmail.com",
+      "mobile": "7895465875",
+      "address": "Sagarpur Delhi",
       "itemlist": [
         {
-          "id": "c020",
-          "pname": "Laptop",
-          "price": "80000",
-          "photo": "laptop.jpg",
-          "details": "This is very good laptop.",
+          "id": "07b2",
+          "pname": "Mouse Dell",
+          "price": 800,
+          "photo": "mouse.jpg",
+          "details": "This very strong mouse",
           "qty": 1
-        },
+        }
+      ]
+    },
+    {
+      "id": "984a",
+      "fullname": "Amir",
+      "email": "amir@gmail.com",
+      "mobile": "87598568578",
+      "address": "Mumbai",
+      "itemlist": [
         {
-          "id": "b12d",
-          "pname": "HP Printer",
-          "price": "12000",
-          "photo": "printer.jpg",
-          "details": "This is a good printer.",
-          "qty": 2
-        },
-        {
-          "id": "aa30",
-          "pname": "Monitor",
-          "price": "25000",
-          "photo": "monitor.jpg",
-          "details": "This is very good monitor",
-          "qty": 3
-        },
-        {
-          "id": "c020",
-          "pname": "Laptop",
-          "price": "80000",
-          "photo": "laptop.jpg",
-          "details": "This is very good laptop.",
-          "qty": 2
+          "id": "243f",
+          "pname": "Cargo Truck",
+          "price": "12000000",
+          "photo": "truck.jpg",
+          "details": "Multi purpose truck",
+          "qty": 1
         }
       ]
     }

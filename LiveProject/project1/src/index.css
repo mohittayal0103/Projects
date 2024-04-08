@@ -12,6 +12,7 @@ code {
     monospace;
 }
 
-.bg-mycolor {
-  background-color: rgb(210, 78, 254);
+
+.bg-mycolor{
+  background-color: rgb(81, 98, 227) !important;
 }
