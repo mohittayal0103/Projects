@@ -1,3 +1,4 @@
+npx create-react-app project1
 npm install sweetalert
 npm install bootstrap
 npm install react-router-dom

@@ -61,12 +61,12 @@
   ],
   "cart": [
     {
-      "id": "a163",
-      "pname": "Desktop For Office",
-      "price": "450000",
-      "photo": "desktop.jpg",
-      "details": "Multi Purpose Bus",
-      "qty": 2
+      "id": "ef8a",
+      "pname": "Dell Laptop",
+      "price": "45000",
+      "photo": "laptop.jpg",
+      "details": "Laptop for office",
+      "qty": 1
     }
   ],
   "order": [
