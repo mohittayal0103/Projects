@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="icon/css/all.css" />
+    <script src="dist/js/bootstrap.bundle.js"></script>
+    <title>EasyToHire</title>
+    <style>
+      .clr {
+        color: #2c4eab;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-md sticky-top p-3 border">
+      <div class="container">
+        <a class="navbar-brand clr me-5 h1" href="#"
+          ><i class="fa fa-users fa-lg"></i>EasyToHire</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav text-secondary blockquote">
+            <li class="nav-item me-3">
+              <a class="nav-link active" href="#"> Home </a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href=""> Company reviews </a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href=""> Salary guide </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto blockquote">
+            <li class="nav-item me-3">
+              <a class="nav-link active text-dark" href="">
+                <i class="fa fa-message fa-lg"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-dark" href="">
+                <i class="fa fa-bell fa-lg"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-dark" href="">
+                <i class="fa fa-user fa-lg"></i>
+              </a>
+            </li>
+            <i class="vr me-3"></i>
+            <li class="nav-item lead">
+              <a class="nav-link text-secondary" href="">
+                Employers / Post Job
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <!-- Search Bar -->
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 border p-3 rounded shadow-lg">
+          <div class="row">
+            <div class="col-md-5 mt-2">
+              <span class="fa fa-search me-3"></span>
+              <input
+                class="border-0"
+                placeholder="Job title, Keyword or Company"
+              />
+            </div>
+            <div class="col-md-1 mt-2">
+              <i class="vr"></i>
+            </div>
+            <div class="col-md-4 mt-2">
+              <i class="fa fa-map-marker me-3" aria-hidden="true"></i>
+              <input
+                class="border-0"
+                placeholder="City, State, Zipcode or Remote"
+              />
+            </div>
+            <div class="col-md-1 ms-5">
+                <button type="button" class="btn btn-outline-primary">Search</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <!-- Text Area -->
+      <div class="row mt-5">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <div
+            class="p-3 bg-info bg-opacity-10 border border-info rounded text-center"
+          >
+            <p class="lead">
+              <a class="clr fw-semibold">Post a Job Today</a> and connect with
+              quality candidates.
+            </p>
+            <p class="lead">
+              <a class="clr fw-semibold">Upload Resume Today</a> and get exciting offers.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <!-- Job Feed --> 
+       <div class="row mt-5">
+        <div class="h3 text-center pb-2 mb-4 border-bottom clr">
+            Available Jobs
+          </div>
+       </div>
+    </div>
+  </body>
+</html>
