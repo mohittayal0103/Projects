@@ -3,18 +3,22 @@ import { useState, useEffect } from "react";
 const NewProfile = () => {
   let [allprofile, setProfile] = useState([]);
   let [errormsg, updateErrorMsg] = useState("");
+  let [jobid, updateJobid] = useState("");
+  let [round, updateRound] = useState("");
 
   // Candidates Data
   const getProfile = async (mydata) => {
     let info = mydata.split("#");
+    updateJobid(info[0]);
+    updateRound(info[1]);
 
-    alert(info[0] + "##" + info[1]);
+    // alert(info[0] + "##" + info[1]);
 
     let input = {
-      "companyid": localStorage.getItem("companyid"),
-      "token": localStorage.getItem("easytohire-token"),
-      "jobid": info[0],
-      "round": info[1]      
+      companyid: localStorage.getItem("companyid"),
+      token: localStorage.getItem("easytohire-token"),
+      jobid: info[0],
+      round: info[1],
     };
 
     let postData = {
@@ -71,27 +75,48 @@ const NewProfile = () => {
   let [remark, setRemark] = useState("");
   let [feedback, setFeedback] = useState("");
 
-  const save = () => {};
+  const save = (obj) => {
+    obj.preventDefault();
+    aboutme["jobid"] = jobid;
+    aboutme["round"] = round;
+    aboutme["remark"] = remark;
+    aboutme["feedback"] = feedback;
+    aboutme["companyid"] = localStorage.getItem("companyid");
+    aboutme["interviewerid"] = localStorage.getItem("easytohire-token");
+
+    let postData = {
+      headers: { 'Content-Type': 'application/json' },
+      method: "POST",
+      body: JSON.stringify(aboutme)
+  }
+  fetch("https://easytohire.in/webapi/job/changeinterviewstatus", postData)
+      .then(response => response.text())
+      .then(msg => {
+          alert(msg);
+  })
+  };
 
   return (
     <div className="container pt-5">
-      <div className="row mb-4">
-        
-      </div>
+      <div className="row mb-4"></div>
 
       <div className="row">
         <div className="col-lg-7">
-        <div className="col-xl-12 mb-3">
-          <select
-            className="form-select"
-            onChange={obj=>getProfile(obj.target.value)}
-          >
-            <option value="">Choose Requirement</option>
-            {allround.map((round, index) => {
-              return <option key={index} value={round.jobid+"#"+round.round}>{round.jobtitle} - Round {round.round}</option>;
-            })}
-          </select>
-        </div>
+          <div className="col-xl-12 mb-3">
+            <select
+              className="form-select"
+              onChange={(obj) => getProfile(obj.target.value)}
+            >
+              <option value="">Choose Requirement</option>
+              {allround.map((round, index) => {
+                return (
+                  <option key={index} value={round.jobid + "#" + round.round}>
+                    {round.jobtitle} - Round {round.round}
+                  </option>
+                );
+              })}
+            </select>
+          </div>
           <h3 className="text-primary text-center">
             <i class="fa-solid fa-circle-user"></i> Profiles -{" "}
             {allprofile.length}
@@ -123,7 +148,7 @@ const NewProfile = () => {
             </tbody>
           </table>
         </div>
-        
+
         <div className="col-xl-5">
           <div className="card border-none shadow-lg mb-3">
             <div className="card-header bg-primary text-white blockquote fw-medium">
@@ -161,23 +186,31 @@ const NewProfile = () => {
               <h5 className="text-center text-warning fs-4">
                 Interview Feedback
               </h5>
-              <div className="mt-3 mb-3">
-                <select className="form-select">
-                  <option value="">Interview Status</option>
-                  <option value="YES">Select</option>
-                  <option value="NO">Reject</option>
-                </select>
-              </div>
-              <div className="mt-3 mb-3">
-                <p className="fw-medium"> Interview Feedback: </p>
-                <textarea
-                  className="form-control"
-                  placeholder="Enter Your Feedback"
-                ></textarea>
-              </div>
-              <div className="text-center">
-                <button className="btn btn-danger">Submit</button>
-              </div>
+              <form onSubmit={save}>
+                <div className="mt-3 mb-3">
+                  <select
+                    className="form-select"
+                    onChange={(obj) => setRemark(obj.target.value)} 
+                    required
+                  >
+                    <option value="">Interview Status</option>
+                    <option value="YES">Select</option>
+                    <option value="NO">Reject</option>
+                  </select>
+                </div>
+                <div className="mt-3 mb-3">
+                  {/* <p className="fw-medium"> Interview Feedback: </p> */}
+                  <textarea
+                    className="form-control"
+                    placeholder="Enter Your Feedback"
+                    onChange={(obj) => setFeedback(obj.target.value)} 
+                    required
+                  ></textarea>
+                </div>
+                <div className="text-center">
+                  <button className="btn btn-danger">Submit</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
